@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "summarization"
+version = "0.1.0"
+description = ""
+authors = ["Sanket Daru <sanket.daru@ibm.com>"]
+readme = "README.md"
+packages = [{include = "summarization"}]
+
+[tool.poetry.dependencies]
+python = "^3.11.2"
+ibm-generative-ai = "^0.3.0"
+sentence-transformers = "2.2.2"
+protobuf = "4.23.3"
+fastapi = "0.98.0"
+uvicorn = "0.22.0"
+spacy = "3.6.1"
+ibm-watson-machine-learning = "^1.0.327"
+langchain = "^0.0.315"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
