@@ -52,7 +52,7 @@ jobs:
     needs: build
     environment:
       name: 'Production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+      url: ${{ secrets.destinationAppUrl }}
     
     steps:
       - name: Download artifact from build job
