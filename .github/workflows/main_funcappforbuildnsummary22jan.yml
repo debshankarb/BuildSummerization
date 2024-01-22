@@ -64,6 +64,14 @@ jobs:
       - name: Unzip artifact for deployment
         run: unzip release.zip
 
+         #zip the build directory
+      - name: Zip Release
+        uses: TheDoctor0/zip-release@0.7.6
+        with:
+          # Filename for archive
+          filename: release.zip
+          path: ./build/*
+
       - name: 'Deploy to Azure Functions'
         uses: Azure/functions-action@v1
         id: deploy-to-function
