@@ -52,7 +52,7 @@ jobs:
     needs: build
     environment:
       name: 'Production'
-      url: 'https://funcappforbuildnsummary22jan.azurewebsites.net/api/http_trigger_BuildnSummary?code=TjosY7J4qny2q7Uym4VUOaAUB0HdW_UMNeKI2m7ivffNAzFuifqbNg=='
+      url: 'https://funcappforbuildnsummary22jan.azurewebsites.net'
 
     steps:
       - name: Download artifact from build job
@@ -61,8 +61,8 @@ jobs:
           name: python-app
           path: .
 
-      - name: Unzip artifact for deployment
-        run: unzip release.zip
+     # - name: Unzip artifact for deployment
+     #   run: unzip release.zip
 
          #zip the build directory
       - name: Zip Release
