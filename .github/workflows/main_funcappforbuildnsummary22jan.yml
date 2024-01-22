@@ -61,8 +61,8 @@ jobs:
           name: python-app
           path: .
 
-     # - name: Unzip artifact for deployment
-     #   run: unzip release.zip
+      - name: Unzip artifact for deployment
+        run: unzip release.zip
 
          #zip the build directory
       - name: Zip Release
