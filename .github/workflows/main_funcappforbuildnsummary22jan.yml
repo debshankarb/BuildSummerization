@@ -52,7 +52,7 @@ jobs:
     needs: build
     environment:
       name: 'Production'
-      url: ${{ steps.deploy-to-function.outputs.webapp-url }}
+      url: 'https://funcappforbuildnsummary22jan.azurewebsites.net/api/http_trigger_BuildnSummary?code=TjosY7J4qny2q7Uym4VUOaAUB0HdW_UMNeKI2m7ivffNAzFuifqbNg=='
 
     steps:
       - name: Download artifact from build job
