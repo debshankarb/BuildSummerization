@@ -45,7 +45,7 @@ jobs:
         with:
           # Filename for archive
           filename: release.zip
-          path: ./summarization/*
+          path: ./dataprocessing/*
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
